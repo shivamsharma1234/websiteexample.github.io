@@ -1,0 +1,939 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Blog</title>
+    <meta name="description" content="The Drummond Lab blog">
+    <meta name="author" content="D. Allan Drummond">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/favicon.ico"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Drummond Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="/blog/" class="active">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          <li class="dropdown nav navbar-nav">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              More <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu nav navbar-nav" role="menu">
+              
+              
+              
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/protocols/">Protocols</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/news/">News</a></li>
+      	
+      
+    
+  
+
+
+
+            </ul>
+            </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+
+
+<div class="pager">
+  
+	  
+  
+	  	
+    
+</div>
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/about-adaptive-phase-separation" class="off">Sticking together to survive stress</a>
+			</div>
+			<div class="smallnote">
+				09 Mar 2017
+				
+				by <a class="off" href="/team/d-allan-drummond">Allan</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				
+<p>We’ve just published a <a href="/papers/paper/adaptive-phase-separation">paper</a> on how a protein’s ability to form hydrogels allows cells to sense and respond to stress.</p>
+
+<h3 id="a-bit-of-background">A bit of background</h3>
+
+<p>Like us, cells react to stresses like heat, starvation, and poison. All these stresses cause clumps of molecules to form inside cells. This clumping—aggregation—looks like damaged proteins sticking together. But in our last <a href="/papers/paper/endogenous-aggregates">paper</a>, we showed that instead, these clumps look like they’re a cellular response, not just signs of damage. (See our <a href="/blog/about-endogenous-aggregates">blog post</a> on it.)</p>
+
+<p>We’re going to go back to the Cellular Institute with its manicured grounds and main building. Happy workers (proteins) go about their often inscrutable business.</p>
+
+<p align="center">
+<img src="/assets/images/cellular-institute-unstressed.png" width="50%" />
+</p>
+
+<p>The Institute is constantly dealing with awful changes in its environment. The mission is to survive, even to keep growing, during those tough times.</p>
+
+<p align="center">
+<img src="/assets/images/environmental-and-growth-reports.png" width="50%" />
+</p>
+
+<p>The picture that came out of our <a href="/blog/about-endogenous-aggregates">earlier study</a> suggested that, overall, the clumping in cells was an organized, reversible process, consistent with a coordinated effort to survive tough times.</p>
+
+<p>But what about for specific proteins? How can you tell if clumping is stress-inflicted damage or an adaptive response? A key test is to see what happens when you stop the clumping during stress. Stopping damage during stress should make cells healthier. Stopping an adaptive stress response, on the other hand, would make cells sicker.</p>
+
+<h3 id="doesnt-sound-too-complicated">Doesn’t sound too complicated</h3>
+
+<p>Easy for you to say, headline! In our study, we had to first find a protein that formed clumps during stress, then figure out how to control its clumping without screwing up a bunch of other stuff (which involved quite a bit of figuring out why it formed clumps, physically, and which bits of the molecule were responsible).</p>
+
+<p>Doing all that required working on the protein in isolation in a test tube, so then we had to put the protein back into cells  to see if it worked the same way. Finally, we could expose those cells to stress and see how they responded.</p>
+
+<h3 id="what-did-we-do">What did we do?</h3>
+
+<p>We picked out a specific protein that formed clumps during stress: poly(A)-binding protein, which is nicknamed Pab1 in baker’s yeast, our beautiful and hardy model organism. (Relatives of Pab1 are found in essentially every cell that has a nucleus, from plants to parasites to people.) We purified Pab1, put it in a dish, and exposed it to the same intracellular conditions that follow stress and are thought to cause clumping, heat and pH.</p>
+
+<p>Yeast cells like to live in acidic (low-pH) environments, but keep their insides at neutral pH. When cells get stressed, their internal pH drops, becoming more acidic. That, others have argued, might cause clumping during non-heat stresses like starvation.</p>
+
+<p align="center">
+<img src="/assets/images/heat-starvation-ph-at-cell-institute.png" width="75%" />
+</p>
+
+<h3 id="what-did-we-find">What did we find?</h3>
+
+<p>First, we discovered that Pab1 “clumping” was something rather specific and wonderful: <strong>phase separation</strong> into hydrogel droplets.</p>
+
+<p>Phase separation is like a flash mob. Under certain conditions, suddenly, from a mixture of two types of molecules, one type surges together, separating from the other (“demixing”) like oil droplets from water. Bunches of recent studies have shown proteins doing this trick, usually under exotic conditions.</p>
+
+<p align="center">
+<img src="/assets/images/phase-separation-cartoon.png" width="75%" />
+</p>
+
+<p>Pab1 phase-separates in response to both pH and temperature, right at the stress-associated ranges of each one. It’s one of the coolest results in the paper: Pab1 is an extraordinarily sensitive <em>sensor of stress</em>, particularly temperature. You might be surprised to know that how yeast cells sense temperature has been a bit of mystery…</p>
+
+<h3 id="back-into-the-cell">Back into the cell</h3>
+
+<p>We figured out a way to make Pab1 phase separate at lower or higher temperatures. Remember our key test? That let us make cells with proteins that couldn’t get together during stress. And guess what we found?</p>
+
+<p align="center">
+<img src="/assets/images/disrupting-phase-separation.png" width="75%" />
+</p>
+
+<p>Cells with Pab1 molecules that didn’t stick together during stress couldn’t grow during stress. This happened during heat shock, and during starvation, too!</p>
+
+<h3 id="ultimately-its-about-fitness">Ultimately, it’s about fitness</h3>
+
+<p>There’s been a bunch of beautiful work on phase separation, hydrogel formation, and other quinary phenomena. (<strong>Quinary</strong>, a term introduced by Stuart Edelstein, refers to a step beyond traditional quaternary structures to structures involving undefined numbers of molecules.) But showing that these phenomena are actually good for cells, as opposed to just gorgeous curiosities, has been challenging. Pab1 delivered for us!</p>
+
+<p align="center">
+<img src="/assets/images/quinary-academy-certificate.png" width="75%" />
+</p>
+
+<h3 id="dive-in">Dive in!</h3>
+
+<p>This <a href="/papers/paper/adaptive-phase-separation">paper</a> was five years from initial discovery to publication. There’s a lot in there (though the reviewers wanted oh so much more!). For experts, our results are full of surprises. First author <a href="/team/josh-riback">Josh</a> has blogged about some of the <a href="/blog/polymer-biophysics-in-action">biophysical aspects</a> and co-first author <a href="/team/chris-katanski">Chris</a> has blogged about the <a href="/blog/Pab1-Demixing-FAQ">in vivo aspects</a>.</p>
+
+<p>And there’s much more to do. How, exactly, does Pab1’s phase separation help the cell? We share some ideas in the paper. How, exactly, does Pab1 sense temperature and pH? Watch this space as the story continues to, well, come together.</p>
+
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/Pab1-Demixing-FAQ" class="off">Behind the scenes of Pab1 demixing</a>
+			</div>
+			<div class="smallnote">
+				09 Mar 2017
+				
+				by <a class="off" href="/team/chris-katanski">Chris</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				<p>Hi, I’m Chris. I’m a student in the Drummond lab and coauthor on the <a href="/papers/paper/adaptive-phase-separation">paper</a> “<em>Stress-Triggered Phase Separation Is an Adaptive, Evolutionarily Tuned Response</em>.” When presenting this work, I’ve been asked a few questions repeatedly that I will answer in a <strong>FAQ</strong> section. I’ll also share an anecdote about the challenges of delineating Pab1’s role in the stress response from its many other functions. I hope the story emphasizes the importance of <strong>endogenous protein expression levels</strong>.</p>
+
+<h1 id="faqs">FAQs:</h1>
+
+<h3 id="the-δp-yeast-strain-grows-better-at-high-temperature-than-the-other-demixing-impaired-mutants--what-gives"><em>The ΔP yeast strain grows better at high temperature than the other demixing-impaired mutants – what gives?</em></h3>
+<p>How can a few point mutations in the P-domain have a greater fitness effect than deleting the domain wholesale? In <strong>figure 6F</strong>, when we compare the growth at 40° C of yeast expressing Pab1 variants; mutants “MV-&gt;A” and “MVFY-&gt;AGPNQ” show a major growth defect. These mutants show a greater defect than the strain expressing Pab1ΔP. This is result is most easily rationalized through the lens of demixing: Pab1ΔP demixes more robustly than either of the mutants; therefore it grows more robustly at high temperature. <strong>Figure 6G</strong> illustrates the relation between growth and Pab1 demixing. The related question, “how can a few point mutations have a greater effect on demixing than deleting the domain wholesale?” remains open. Josh discusses this point in greater detail in <a href="/blog/polymer-biophysics-in-action">his blog post</a>.</p>
+
+<h3 id="how-do-mutations-to-the-p-domain-affect-stress-granule-formation"><em>How do mutations to the P-domain affect stress granule formation?</em></h3>
+<p>I don’t know. The stress used in <strong>figure 6D</strong> to trigger Pab1 demixing is too mild to elicit Pab1-marked stress granules in wild type cells (<strong>figure 1A</strong>). Moreover, while stress granules are easily observed, it is not clear that they are the physiologically functional species. Here, we make the case that perturbing demixing of Pab1 is sufficient to affect physiology. In fact, I favor the hypothesis that quinary assemblies and stress granules are related, but separable phenomena. Pab1 forms sedimentable quinary assemblies in the absence of visible focus formation. Conversely, HSP104 is an example of a protein that colocalizes with stress granules, but isn’t sedimentable.</p>
+<p align="center">
+<img src="/assets/images/CK_demix_then_SG_blueprint.png" width="75%" />
+</p>
+
+<h3 id="is-the-assembly-of-other-proteins-perturbed"><em>Is the assembly of other proteins perturbed?</em></h3>
+<p>Yef3 is another protein that forms sedimentable species during mild stress conditions. <strong>Figure S5</strong> indicates that demixing of Yef3 does not vary between P-domain mutants. However, it is possible that demixing of one of the other ~150 heat-assembling proteins is affected. At its core, this question is about the mechanism of formation of large cellular assemblies. Are all proteins demixing autonomously, or can one protein recruit another to these structures? Is RNA binding sufficient to recruit some proteins? Is recruitment stress specific?</p>
+
+<h3 id="what-is-going-on-with-rna"><em>What is going on with RNA?</em></h3>
+<p>Right? In vitro we show the following: RNA is not necessary for Pab1 demixing (<strong>fig 2E</strong>), RNA actually inhibits demixing (<strong>fig 2C</strong>); and short poly(A) sequences are released during demixing (<strong>fig 2A</strong>). One interpretation is that demixing is dominated by protein-protein interactions and these interactions are mutually exclusive with RNA binding. In vivo we show that heat-triggered sedimentation of Pab1 is RNase1 insensitive (<strong>fig 1B</strong>). This result is consistent with the in vitro results, though other interpretations are possible. This model predicts that demixing of Pab1 and poly(A)-positive RNA are not mechanistically connected. I find this unintuitive, but testable.</p>
+
+<h3 id="you-speculate-about-pab1-as-a-translational-regulator-of-the-stress-response-how-much-is-speculation"><em>You speculate about Pab1 as a translational regulator of the stress response. How much is speculation?</em></h3>
+<p>If you’re curious about the mechanism by which Pab1 demixing affects stress tolerance, then come to my talk at <strong>ASBMB</strong> “<em>Translation of heat shock proteins is regulated by poly(A)-binding protein assembly</em>.” Its on <strong>Sunday April 23 2017</strong> during the <strong>Protein folding, Aggregation, and Chaperones session</strong>; or come see the poster later.</p>
+
+<h1 id="make-happy-yeast">Make happy yeast:</h1>
+<p>Pab1 is an essential gene with a role in many cellular processes. If one wishes to make mutations, delete then replace isn’t an option. Other work has successfully expressed Pab1 from a plasmid. However, cells are very sensitive to Pab1 expression levels – consistent with its known autoregulatory expression mechanism. My first attempt to modify the Pab1 P-domain was with a construct that replaced the native genomic 3’ UTR with a KanMX selectable marker. I also made the control strain with the same marker, but preserved P-domain. The control strain grew slowly and at 30°C and expressed Pab1 at ~20% the wild type. Reduced expression is problematic because demxing is concentration dependent; similarly, over-expression can lead to demixing artifacts. Worse, the proteome of this control strain resembled that of stressed wild type cells, including high chaperone expression. Ultimately, I developed the serial transformation strategy described in the methods (and another blog post). The resulting strains have no selectable markers, native 3’ UTRs, and no extra nucleotide scars. This manor of strain construction solved the reduced Pab1 expression and slow growth problems. Now, I am able to discern the relation of assembly and the stress response, without conflation of growth rate effects.</p>
+<p align="center">
+<img src="/assets/images/CK_cool_yeast.png" width="75%" />
+</p>
+
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/polymer-biophysics-in-action" class="off">Polymer biophysics of Pab1: expectations vs. reality</a>
+			</div>
+			<div class="smallnote">
+				08 Mar 2017
+				
+				by <a class="off" href="/team/josh-riback">Josh</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				
+<p>Hi, I am Joshua Riback, a student in the <a href="http://biophysics.uchicago.edu/">Biophysical Sciences graduate program</a> co-advised in both the Drummond and <a href="http://sosnick.uchicago.edu/">Sosnick</a> Labs.</p>
+
+<p>Recently we have published a paper characterizing an intersection between polymer (bio)physics and cell biology. Polymer biophysics elucidates the principles governing the organized demixing of molecules inside of cells. Protein and RNA can demix into massive assemblies such as gels, liquids, and fibers. They lack a fixed stoichiometry so we refer to them as quinary assemblies. We focus on the properties of assemblies composed of poly(A)-binding protein (Pab1) that form in eukaryotic cells in response to cellular stress.  We find that the demixing of Pab1 has been tuned for rapid response to stress and is beneficial for surviving that stress. For a little more background, see <a href="/blog/about-adaptive-phase-separation">Allan’s post</a> on our paper.</p>
+
+<p>For those who wish to dive into the paper, please proceed <a href="/papers/paper/adaptive-phase-separation">here</a>. Since our story differs significantly from the current results in the field, I have focused this blog post on the polymer biophysics I expected would govern Pab1 demixing vs. reality.</p>
+
+<h1 id="polymer-biophysics-of-pab1-expectations">Polymer biophysics of Pab1: Expectations</h1>
+
+<p>Prior to obtaining data and based on my reading of the literature in the field, the principles I expected were going to govern Pab1 demixing were:</p>
+
+<ol>
+  <li>
+    <p>Pab1 would have an intrinsically disordered region (‘IDR’ or non-foldable low complexity regions) that would allow different Pab1 molecules to flexibly interact in the quinary assembly.</p>
+  </li>
+  <li>
+    <p>Demixing would be favorable due to multivalent interactions between RNA and Pab1 and between IDRs on different Pab1 molecules.</p>
+  </li>
+  <li>
+    <p>Pab1’s IDR would promote demixing through interactions between charge, aromatic, or polar residues (i.e. coulomb interactions or hydrogen bonds) and not from aliphatic residues because they are depleted in IDRs. The interacting residues would be enriched in the composition of the IDR.</p>
+  </li>
+  <li>
+    <p>Pab1’s IDR would be collapsed. When demixed, Pab1’s IDR would interact with other Pab1 molecules; but when monomeric, Pab1’s IDR would self-interact causing it to collapse.</p>
+  </li>
+</ol>
+
+<h1 id="polymer-biophysics-of-pab1-reality">Polymer biophysics of Pab1: Reality</h1>
+
+<h2 id="expectation-1">Expectation: #1</h2>
+<blockquote>
+  <p>Pab1 would have an IDR that would allow different Pab1 molecules to flexibly interact in the quinary assembly.</p>
+</blockquote>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Pab1 has an IDR called the proline-rich domain or P domain.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Deletion of the P domain perturbs stress-triggered demixing of Pab1 into quinary assemblies <em>in vitro</em> and <em>in vivo</em>.</li>
+</ul>
+
+<h2 id="expectation-2">Expectation: #2</h2>
+<blockquote>
+  <p>Demixing would require multivalent interactions between RNA and Pab1 and/or between IDRs on different Pab1 molecules.</p>
+</blockquote>
+
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><em>In vitro</em>, Pab1 demixing does not require RNA; RNA destabilizes demixing. How does this work in cells? Chris considers this further in his <a href="/blog/Pab1-Demixing-FAQ">FAQ section</a></p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Although the P domain is the strongest single domain enhancer of demixing, it is not required for demixing. Multivalent interactions between Pab1’s folded domains are required for demixing and govern the salt and pH sensitivity of demixing. When splitting the protein in half, only the half <strong>without</strong> the IDR can demix.</p>
+  </li>
+</ul>
+
+<h2 id="expectation-3">Expectation: #3</h2>
+<blockquote>
+  <p>Pab1’s IDR would promote demixing through interactions between charge, aromatic, or polar residues (ie coulomb interactions or hydrogen bonds) and not from aliphatic residues because they are depleted in IDRs. The interacting residues would be enriched in the composition of the IDR.</p>
+</blockquote>
+
+<p>IDRs are understood by their compositional properties. Based on known IDRs that can demix, important compositional features have been identified (see the <a href="http://www.nature.com/nphys/journal/v11/n11/abs/nphys3532.html">review</a>). One of these IDRs, the RGG domain is <a href="http://www.pnas.org/content/112/23/7189.long">necessary for demixing</a> of the P-granule protein, LAF-1. The composition of the P domain is different from that of the RGG domain and these other known IDRs implicated in demixing.</p>
+
+<p align="center">
+<img src="/assets/images/JAR_compositionPDOMandRGGDOM.png" width="75%" />
+</p>
+
+<p>For clarity, the compositional plots are fraction residues of each type, and for the evolutionary composition plot, each row is a different species. The hydrophobicity of the residue groups are roughly aromatic, aliphatic, small, polar, and ionizable from most to least hydrophobic.</p>
+
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />The P domain is strongly depleted for ionizable residues. This composition feature is conserved.</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />The P domain does not have unusual polar or aromatic content. This is conserved.</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />The P domain is unusually hydrophobic; these hydrophobic residues are interacting and stabilize demixing.</p>
+  </li>
+</ul>
+
+<h2 id="expectation-4">Expectation: #4</h2>
+<blockquote>
+  <p>Pab1’s IDR would be collapsed. When demixed, Pab1’s IDR would interact with other Pab1 molecules, but when monomeric, Pab1’s IDR would self-interact causing it to collapse.</p>
+</blockquote>
+
+<p>This is a concept drawn from polymer physics 101. If IDR-IDR interactions are sufficiently strong, then the IDR will either collapse if at low concentration or demix if at sufficiently high concentration.</p>
+
+<p align="center">
+<img src="/assets/images/JAR_IDRcollapseANDagg.png" width="75%" />
+</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />The P domain is collapsed. It behaves as expected for a weakly packed, dynamic globule. Extreme mutations in the P domain, such as changing the 15% of the sequence that is glycine to proline or randomly changing the order of ALL the residues in the domain, do not perturb P domain collapse.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />The extent of P domain collapse correlates with the enhancement of Pab1 demixing <em>in vivo</em>, <em>in vitro</em>, and survival during stress.</li>
+</ul>
+
+<h1 id="expectation-vs-reality-summary">Expectation vs. Reality Summary</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Expectation</th>
+      <th>Reality</th>
+      <th>Expectation~Reality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Pab1 has IDR</td>
+      <td>IDR (P domain) is conserved in eukaryotes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Demixing requires RNA:Pab1 interactions and IDR:IDR interactions</td>
+      <td>Demixing requires only folded domains</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IDR promotes demixing with charge, aromatic, or polar residues</td>
+      <td>Net hydrophobicity of amino acid residues enhances demixing</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>IDR is collapsed. Extent of IDR collapse would correlate with enhancing demixing</td>
+      <td>Size of IDR correlates with the temperature of demixing <em>in vivo</em> and <em>in vitro</em></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Feel free to contact me with questions or comments.</p>
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/edward-parting-poetry" class="off">Parting poetry from a peerless postdoc</a>
+			</div>
+			<div class="smallnote">
+				19 Dec 2015
+				
+				by <a class="off" href="/team/d-allan-drummond">Allan</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				
+<blockquote>
+  <p><em>Note: <a href="/team/edward-wallace">Edward</a> sang the ditty below to us at his going-away party. He was the group’s first postdoc, a scientist of tremendous range who trained as a mathematician and mastered <a href="papers/paper/estimating-selection-on-synonymous-codon-usage/">computational molecular evolution</a>, then <a href="/papers/paper/endogenous-aggregates/">experimental biochemistry</a>, during his tenure. Now he’s off to start his Marie Curie fellowship in Edinburgh. He is greatly admired, and already deeply missed. – Allan</em></p>
+</blockquote>
+
+<h1 id="o-drummond-lab">O Drummond Lab</h1>
+<p>(to the tune of “Shenandoah”)</p>
+
+<p>O Drummond lab, how I shall miss you,<br />
+At the bench and the computer,<br />
+And all the fine science that you do.<br />
+Away, I must away, across the vast Atlantic.</p>
+
+<p>For five long years I’ve toiled away,<br />
+At the bench and the computer,<br />
+Measuring proteins and RNA.<br />
+Away, I must away, across the vast Atlantic.</p>
+
+<p>All you have taught me so, so much,<br />
+At the bench and the computer,<br />
+Of biochemistry, evolution, cell biology, statistics, biophysics*, and such.<br />
+Away, I must away, across the vast Atlantic.</p>
+
+<p>O Drummond lab, you lovely colleagues,<br />
+At the bench and the computer,<br />
+And a quintillion heat-shocked yeasties.<br />
+Away, I must away, across the vast Atlantic.</p>
+
+<p>*Creative interpretation is needed to fit all these fields in a single line, or single postdoc.</p>
+
+<p><em>–<a href="/team/edward-wallace">Edward Wallace</a>, December 2015.</em></p>
+
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/about-endogenous-aggregates" class="off">Rethinking heat-induced aggregation</a>
+			</div>
+			<div class="smallnote">
+				10 Sep 2015
+				
+				by <a class="off" href="/team/d-allan-drummond">Allan</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				
+<p>We’ve just published a <a href="/papers/paper/endogenous-aggregates/">paper</a> on how cells respond to heat stress.</p>
+
+<h3 id="what-did-we-do">What did we do?</h3>
+
+<p>We measured heat-induced protein aggregation and disaggregation in budding yeast, a beautiful and hardy free-living unicellular organism that grows happily at 30°C, gets stressed out starting around 37°C, and dies pretty fast at 50°C.</p>
+
+<h3 id="what-did-we-find">What did we find?</h3>
+
+<p>We discovered that aggregates of endogenous proteins that form after heat stress are fully reversible, form rapidly at specific locations, and in certain cases retain function and fidelity in vitro.</p>
+
+<p>The behavior of endogenous, mature proteins in vivo does not match expectations from studies that use exogenous/reporter proteins or that focus on newly synthesized proteins. In those studies, aggregated proteins are often (but not always) degraded and generally lose their function.</p>
+
+<h3 id="ideas">Ideas</h3>
+
+<p>What looked like heat-induced protein damage followed by triage and degradation instead looks like an orderly, evolved regulatory response.</p>
+
+<h3 id="irresponsible-speculations">Irresponsible speculations</h3>
+
+<p>Heat-induced protein aggregation has been seen as mostly <em>physics</em>, but (for proteins that actually aggregate during heat shock) it’ll turn out to be mostly <em>biology</em>. The vast majority of aggregation in the cell in response to heat shock will prove to be beneficial. And not just by preventing toxicity, the way amyloid fibrils are often argued to be beneficial, but by carrying out critical cellular remodeling functions.</p>
+
+<p>Primary among those functions: focusing cellular protein synthesis on mRNAs encoding stress-responsive proteins.</p>
+
+<h3 id="picture-please">Picture, please?</h3>
+
+<p>For the science, there’s no substitute for reading the <a href="/papers/paper/endogenous-aggregates/">paper</a>. Here, I want to talk a little bit about how to think about what’s going on in the cell, given our study and everything else we know.</p>
+
+<p>Here is the idyllic campus of the Cellular Institute with its manicured grounds and main building. Happy workers (proteins) go about their often inscrutable business.</p>
+
+<p><img src="/assets/images/cellular-institute.png" alt="institute" width="300px" style=".center" /></p>
+
+<p>When suddenly: <em>catastrophe</em>. A fire breaks out. (Heat shock!) What happens?</p>
+
+<p>What has long been observed—blurrily, as if from orbit, because our instruments aren’t so great—is that suddenly the workers move to particular places and gather together in big groups.</p>
+
+<p><img src="/assets/images/fire-drill-blurry.png" alt="fire-drill-blurry" width="300px" style=".center" /></p>
+
+<p>Then after a little while, emergency crews show up, and some time after that, everything’s back to normal.</p>
+
+<p>So what’s going on?</p>
+
+<p>Most previous work has guessed, for many good empirical reasons, that mainly what’s going on is that the workers are distressed, damaged, even dying. Workers clump together because—gruesomely—heat partially melts them and makes them sticky. Of course, these workers stop working. Some injured workers can be rescued; many of them are beyond saving. The emergency crews triage victims, rescue some, and dispose of the bodies of the rest.</p>
+
+<p><img src="/assets/images/heat-shock-damage.png" alt="heat-shock-damage" width="550px" style=".center" /></p>
+
+<p>The alternative is that the institute has in place disaster-preparedness plans. What we observe is those plans being carried out to the letter, and the plans for heat shock look like the plans for a wide range of other emergencies:</p>
+
+<p><img src="/assets/images/cellular-emergency-plan.png" alt="emergency-plan" width="350px" style=".center" /></p>
+
+<p>Some workers stop working, but not because they’re damaged, just to clear the way for the emergency crew. Others continue to go about their business. Those clumps are groups of workers calmly holding on to each other and collecting at <a href="http://www.potsdam.edu/about/physicalplant/evacuationplans/procedures.cfm">designated assembly points</a>. The emergency crew shows up and tends to the few workers who are actually injured. When they’re done, the crew helps the assembled workers let go of each other and return to their original jobs.</p>
+
+<p><img src="/assets/images/heat-shock-assembly.png" alt="heat-shock-assembly" width="550px" style=".center" /></p>
+
+<p>Our study provides evidence that this latter set of activities describes the behavior of most endogenous, mature proteins. Which is not to say that the damage-and-chaos stuff doesn’t happen! Rather, it happens mainly to newly synthesized proteins and to foreign, destabilized reporter proteins.</p>
+
+<p>So here’s what we think is going on:</p>
+
+<p><img src="/assets/images/fire-drill-building-diagram.png" alt="fire-drill" width="750px" style=".center" /></p>
+
+<p>The “emergency crew” here is, naturally, the team of heat-induced molecular chaperones.</p>
+
+<p>There’s much more to do, and we’re incredibly excited to share the stories coming out of this work. Stay tuned…</p>
+
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/adding-mathjax" class="off">Testing MathJax</a>
+			</div>
+			<div class="smallnote">
+				28 May 2015
+				
+				by <a class="off" href="/team/d-allan-drummond">Allan</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				
+<p>We do plenty of math, so I’d like to test out <a href="https://www.mathjax.org/">MathJax</a> support.</p>
+
+<p>Here is an example of MathJax inline rendering — \( 1/x^{2} \). And here is a block rendering:
+\[ r_{XY} = \frac{\mathrm{cov}(X,Y)}{\sqrt{\mathrm{var}(X)\mathrm{var}(Y)}} \]</p>
+
+<p>Now, if we’d like to get serious, we’d do something involving multiline aligned equations, like \[
+\begin{align}
+\mathcal{N}(t, \mu, \sigma) &amp;= \mathrm{normal} \newline
+ &amp;= \frac{1}{\sqrt{2 \pi} \sigma} e^{-\frac{(t-\mu)^2}{2 \sigma^2}}
+\end{align}
+\]
+or even an inline formula like \( \sum_{t=0}^{\infty} \frac{x^t}{t!} = e^x\).</p>
+
+<p>Or we could try defining a command, like this. \( 	\newcommand{\water}{\mathrm{H}_{2}\mathrm{O}} \)</p>
+
+<blockquote>
+  <p>Buffer slides off the sides of our tubes like \(\water\) off a duck’s back.</p>
+</blockquote>
+
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+	
+
+	<div class="bigspacer"></div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="head">
+				<a href="/blog/a-new-site" class="off">A new site</a>
+			</div>
+			<div class="smallnote">
+				22 Apr 2015
+				
+				by <a class="off" href="/team/d-allan-drummond">Allan</a>
+								
+			</div>	
+		</div>
+		<div class="col-md-8">		
+			<div style="height:5px;"></div>			
+			
+			<div class="post">
+				
+<p>Our new lab website is up and running. My goal with this site is to change how we communicate our science to the world, and to help others to get over barriers to that change.</p>
+
+<p>In terms of technology adoption, I believe we are <a href="http://www.drdobbs.com/architecture-and-design/crossing-the-chasm/187200223">early majority</a> types. That means the technology we’re using is relatively mature–we’re not risking much–but most people in our sphere aren’t yet using it. If you’re looking for <a href="http://www.drdobbs.com/architecture-and-design/crossing-the-chasm/187200223">innovation</a> or are an <a href="http://www.drdobbs.com/architecture-and-design/crossing-the-chasm/187200223">early adopter</a>, you’ll find this site to be hopelessly outdated!</p>
+
+<h2 id="open">Open</h2>
+
+<p>The site is fully open source, available in a <a href="https://github.com/drummondlab/drummondlab.github.io">GitHub repository</a>.</p>
+
+<h2 id="connected">Connected</h2>
+
+<p>Just as critical scientific interactions have taken place by correspondence and at scientific meetings, many such interactions now take place online in social media. <a href="http://datadryad.org">Data</a> and <a href="http://figshare.com">figures</a> now have homes in online repositories. (This stuff is forehead-slappingly obvious to some, and news to others.)</p>
+
+
+			</div>
+		</div>			
+		<div class="col-md-1"></div>
+	</div>		
+
+
+
+<div class="bigspacer"></div>	
+<div class="row">
+	<div class="col-md-12 text-center">
+		<a class="off" href="//archive/">
+			<div class="smallhead">Archive</div>
+			<i class="text-gray fa fa-chevron-circle-down fa-2x"></i>
+		</a>
+	</div>
+</div>
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <ul class="nav navbar-nav navbar-left navbar-small">
+          <li><a href=http://bmb.uchospitals.edu>Biochemistry & Molecular Biology</a></li>
+          <li><a href=http://www.uchicago.edu>The University of Chicago</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html#purpose'>About</a></li>
+          <li><a href='/about.html#join'>Join</a></li>
+          <li><a href='/about.html#contact'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+ 
+
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-62008526-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

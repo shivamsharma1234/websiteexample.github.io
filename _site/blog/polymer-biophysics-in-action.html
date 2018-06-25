@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Polymer biophysics of Pab1: expectations vs. reality</title>
+    <meta name="description" content="">
+    <meta name="author" content="D. Allan Drummond">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Optional theme -->
+    <link href="/assets/themes/lab/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Sticky Footer -->
+    <link href="/assets/themes/lab/bootstrap/css/bs-sticky-footer.css" rel="stylesheet"/>
+    
+    <!-- Custom styles -->
+    <link href="/assets/themes/lab/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="/assets/themes/lab/images/logo/favicon.ico"/>
+
+    <!-- Custom fonts and icons via Font Awesome, http://fortawesome.github.io/Font-Awesome/ -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!-- Fonts via Google -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'/>
+
+    <!-- Math via MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    -->
+
+  </head>
+
+  <body>
+
+  <!-- Static top navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class='container'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+        <img class="pull-left logo" src="/assets/themes/lab/images/logo/lab-logo.svg" type="image/svg+xml">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left hidden-sm">
+          <!-- Don't put site title on home page -- there's already a big title there. -->
+          
+          
+          
+          <a class="navbar-brand" href="/">Drummond Lab</a>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right">
+          
+          
+          
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/projects/">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/team/">Team</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/papers/">Papers</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          <li class="dropdown nav navbar-nav">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              More <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu nav navbar-nav" role="menu">
+              
+              
+              
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/protocols/">Protocols</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/news/">News</a></li>
+      	
+      
+    
+  
+
+
+
+            </ul>
+            </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+   </div>
+
+   <!-- Content -->
+   <div class="container">
+      
+<div class="page-header">
+  <h1>Polymer biophysics of Pab1: expectations vs. reality </h1>
+</div>
+
+
+
+
+<div class="row post-full">
+  <div class="col-md-2">
+    <div class="bigspacer"></div>
+    <div class="glyphbox note"> <!-- DAD: what is this--> 
+        <div class="smallhead">
+          08 Mar 2017
+          
+          <div class="bigspacer"></div>
+          by <a class="off" href="/team/josh-riback">Josh</a>
+                     
+        </div>
+        <div class="bigspacer"></div>
+       <div class="smallhead">
+        Share
+      </div>
+        <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
+        <div class="post-sharing">
+         
+
+  
+  		<!-- Twitter -->
+<i class="fa fa-twitter fa-fw"></i>
+<a class="off" href="https://twitter.com/share?url=&text=" data-text="Polymer biophysics of Pab1: expectations vs. reality" data-via="" data-related="dadrummond" target="_blank">tweet</a>
+
+	
+
+
+        </div>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <div class="bigspacer"></div>
+    <div class="glyphbox note"> <!-- DAD: what is this--> 
+      <div class="content">
+        
+<p>Hi, I am Joshua Riback, a student in the <a href="http://biophysics.uchicago.edu/">Biophysical Sciences graduate program</a> co-advised in both the Drummond and <a href="http://sosnick.uchicago.edu/">Sosnick</a> Labs.</p>
+
+<p>Recently we have published a paper characterizing an intersection between polymer (bio)physics and cell biology. Polymer biophysics elucidates the principles governing the organized demixing of molecules inside of cells. Protein and RNA can demix into massive assemblies such as gels, liquids, and fibers. They lack a fixed stoichiometry so we refer to them as quinary assemblies. We focus on the properties of assemblies composed of poly(A)-binding protein (Pab1) that form in eukaryotic cells in response to cellular stress.  We find that the demixing of Pab1 has been tuned for rapid response to stress and is beneficial for surviving that stress. For a little more background, see <a href="/blog/about-adaptive-phase-separation">Allan’s post</a> on our paper.</p>
+
+<p>For those who wish to dive into the paper, please proceed <a href="/papers/paper/adaptive-phase-separation">here</a>. Since our story differs significantly from the current results in the field, I have focused this blog post on the polymer biophysics I expected would govern Pab1 demixing vs. reality.</p>
+
+<h1 id="polymer-biophysics-of-pab1-expectations">Polymer biophysics of Pab1: Expectations</h1>
+
+<p>Prior to obtaining data and based on my reading of the literature in the field, the principles I expected were going to govern Pab1 demixing were:</p>
+
+<ol>
+  <li>
+    <p>Pab1 would have an intrinsically disordered region (‘IDR’ or non-foldable low complexity regions) that would allow different Pab1 molecules to flexibly interact in the quinary assembly.</p>
+  </li>
+  <li>
+    <p>Demixing would be favorable due to multivalent interactions between RNA and Pab1 and between IDRs on different Pab1 molecules.</p>
+  </li>
+  <li>
+    <p>Pab1’s IDR would promote demixing through interactions between charge, aromatic, or polar residues (i.e. coulomb interactions or hydrogen bonds) and not from aliphatic residues because they are depleted in IDRs. The interacting residues would be enriched in the composition of the IDR.</p>
+  </li>
+  <li>
+    <p>Pab1’s IDR would be collapsed. When demixed, Pab1’s IDR would interact with other Pab1 molecules; but when monomeric, Pab1’s IDR would self-interact causing it to collapse.</p>
+  </li>
+</ol>
+
+<h1 id="polymer-biophysics-of-pab1-reality">Polymer biophysics of Pab1: Reality</h1>
+
+<h2 id="expectation-1">Expectation: #1</h2>
+<blockquote>
+  <p>Pab1 would have an IDR that would allow different Pab1 molecules to flexibly interact in the quinary assembly.</p>
+</blockquote>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Pab1 has an IDR called the proline-rich domain or P domain.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Deletion of the P domain perturbs stress-triggered demixing of Pab1 into quinary assemblies <em>in vitro</em> and <em>in vivo</em>.</li>
+</ul>
+
+<h2 id="expectation-2">Expectation: #2</h2>
+<blockquote>
+  <p>Demixing would require multivalent interactions between RNA and Pab1 and/or between IDRs on different Pab1 molecules.</p>
+</blockquote>
+
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><em>In vitro</em>, Pab1 demixing does not require RNA; RNA destabilizes demixing. How does this work in cells? Chris considers this further in his <a href="/blog/Pab1-Demixing-FAQ">FAQ section</a></p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Although the P domain is the strongest single domain enhancer of demixing, it is not required for demixing. Multivalent interactions between Pab1’s folded domains are required for demixing and govern the salt and pH sensitivity of demixing. When splitting the protein in half, only the half <strong>without</strong> the IDR can demix.</p>
+  </li>
+</ul>
+
+<h2 id="expectation-3">Expectation: #3</h2>
+<blockquote>
+  <p>Pab1’s IDR would promote demixing through interactions between charge, aromatic, or polar residues (ie coulomb interactions or hydrogen bonds) and not from aliphatic residues because they are depleted in IDRs. The interacting residues would be enriched in the composition of the IDR.</p>
+</blockquote>
+
+<p>IDRs are understood by their compositional properties. Based on known IDRs that can demix, important compositional features have been identified (see the <a href="http://www.nature.com/nphys/journal/v11/n11/abs/nphys3532.html">review</a>). One of these IDRs, the RGG domain is <a href="http://www.pnas.org/content/112/23/7189.long">necessary for demixing</a> of the P-granule protein, LAF-1. The composition of the P domain is different from that of the RGG domain and these other known IDRs implicated in demixing.</p>
+
+<p align="center">
+<img src="/assets/images/JAR_compositionPDOMandRGGDOM.png" width="75%" />
+</p>
+
+<p>For clarity, the compositional plots are fraction residues of each type, and for the evolutionary composition plot, each row is a different species. The hydrophobicity of the residue groups are roughly aromatic, aliphatic, small, polar, and ionizable from most to least hydrophobic.</p>
+
+<ul class="task-list">
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />The P domain is strongly depleted for ionizable residues. This composition feature is conserved.</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />The P domain does not have unusual polar or aromatic content. This is conserved.</p>
+  </li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />The P domain is unusually hydrophobic; these hydrophobic residues are interacting and stabilize demixing.</p>
+  </li>
+</ul>
+
+<h2 id="expectation-4">Expectation: #4</h2>
+<blockquote>
+  <p>Pab1’s IDR would be collapsed. When demixed, Pab1’s IDR would interact with other Pab1 molecules, but when monomeric, Pab1’s IDR would self-interact causing it to collapse.</p>
+</blockquote>
+
+<p>This is a concept drawn from polymer physics 101. If IDR-IDR interactions are sufficiently strong, then the IDR will either collapse if at low concentration or demix if at sufficiently high concentration.</p>
+
+<p align="center">
+<img src="/assets/images/JAR_IDRcollapseANDagg.png" width="75%" />
+</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />The P domain is collapsed. It behaves as expected for a weakly packed, dynamic globule. Extreme mutations in the P domain, such as changing the 15% of the sequence that is glycine to proline or randomly changing the order of ALL the residues in the domain, do not perturb P domain collapse.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />The extent of P domain collapse correlates with the enhancement of Pab1 demixing <em>in vivo</em>, <em>in vitro</em>, and survival during stress.</li>
+</ul>
+
+<h1 id="expectation-vs-reality-summary">Expectation vs. Reality Summary</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Expectation</th>
+      <th>Reality</th>
+      <th>Expectation~Reality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Pab1 has IDR</td>
+      <td>IDR (P domain) is conserved in eukaryotes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Demixing requires RNA:Pab1 interactions and IDR:IDR interactions</td>
+      <td>Demixing requires only folded domains</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IDR promotes demixing with charge, aromatic, or polar residues</td>
+      <td>Net hydrophobicity of amino acid residues enhances demixing</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>IDR is collapsed. Extent of IDR collapse would correlate with enhancing demixing</td>
+      <td>Size of IDR correlates with the temperature of demixing <em>in vivo</em> and <em>in vitro</em></td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Feel free to contact me with questions or comments.</p>
+
+      </div>
+    </div>
+  </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="glyphicon glyphicon-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#blog-ref">
+    		blog <span>7</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+  
+
+  
+    <hr>
+    
+
+</div>
+
+
+   </div>
+
+
+  <!-- Static bottom navbar -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-bottom-collapse"> <!-- NOTE! data-target was changed to jb-bottom-collapse -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="jb-bottom-collapse">
+        <ul class="nav navbar-nav navbar-left navbar-small">
+          <li><a href=http://bmb.uchospitals.edu>Biochemistry & Molecular Biology</a></li>
+          <li><a href=http://www.uchicago.edu>The University of Chicago</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right navbar-small">
+          <li><a href='/about.html#purpose'>About</a></li>
+          <li><a href='/about.html#join'>Join</a></li>
+          <li><a href='/about.html#contact'>Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+ 
+
+
+    
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-62008526-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/themes/lab/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
